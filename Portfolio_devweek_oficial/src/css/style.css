@@ -1,0 +1,154 @@
+body {
+    background-image: url(../imagens/fundo-retro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Silkscreen', monospace;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao {
+    background-color: #070b15;
+    width: 480px;   
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.abas img {
+    width: 30px;
+}
+
+.cartao .minhas-informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cartao .minhas-informacoes img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid rgb(32, 5, 113);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: none;
+}
+
+.nome {
+    font-size: 24px;
+    color: #fcfcfb;
+}
+.cargo {
+    font-size: 17px;
+    color: #f8f4ef;
+}
+
+.cartao .conteudo {
+    background-color: #070b15;
+    margin-top: 15px;
+}
+
+.cartao .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.cartao .abas img {
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: #111f40;
+}
+
+.cartao .informacoes-abas {
+    background-color: #111f40;
+}
+
+.cartao .abas .aba:hover {
+    background-color: #173d87;
+}
+
+.informacoes-abas .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado {
+    display: block;
+}
+
+.informacoes-abas .sub-titulo {
+    color: #fff42c;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao {
+    font-size: 15px;
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.informacoes-abas .descricao span {
+    color: #ffffff;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a {
+    background-color: #070b15;
+    width: 220px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.redes-sociais .curriculo {
+    background-color: #049064;
+}
+
+.redes-sociais .linkedin {
+    background-color: #1d87bd;
+}
+
+.redes-sociais .github {
+    background-color: #545454;
+}
+
+.redes-sociais li a:hover {
+    opacity: 0.7;
+}
